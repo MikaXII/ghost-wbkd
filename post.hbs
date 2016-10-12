@@ -97,13 +97,45 @@
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
+<aside class="read-next">
+    {{#prev_post}}
+   <!--
+   <a class="read-next-story " style="background-image: url(/content/images/2014/09/testimg3-1.jpg)" href="/the-businessman-the-fisherman/">
+        <section class="post">
+            <h2>The Businessman &amp; The Fisherman</h2>
+            <p>An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep…</p>
+        </section>
 
+    </a>
+    -->
+    <a class="read-next-story " style="background-image: url({{image}})" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p></p>
+        </section>
+    </a>
+    {{/prev_post}}
+    {{#next_post}}
+    <a class="read-next-story " style="background-image: url({{image}})" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p></p>
+        </section>
+    </a>
+    {{/next_post}}
+</aside>
     </article>
 
 </div>
 
+
 <div id="sidebar">{{> "sidebar"}}</div>
 
+
+
 </main>
+
+
+
 
 {{/post}}
