@@ -4,16 +4,18 @@
 
 <a class="article-link" href="{{url}}">
     <article class="box is-link {{post_class}}">
-        {{#if image}}
-            <section class="post-image" style="background-image:url({{image}})"></section>
-        {{/if}}
-        <header class="post-header">
+        <!--<header class="post-header">
             <h2 class="post-title">{{{title}}}</h2>
-        </header>
+        </header>-->
+        {{#if image}}
+        <!-- <section class="post-image" style="background-image:url({{image}})"></section>-->
+           <img class="post-image" src="{{image}}"></section>
+        {{/if}}
+        <!--
         <section class="post-excerpt">
             <p>{{excerpt words="26"}}...</p>
         </section>
-        
+        -->
         <footer class="post-meta">
             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
         </footer>
